@@ -1,9 +1,9 @@
 package com.example.multimodule.app
 
 import android.app.Application
-import com.example.calculator.di.CalculatorComponent
-import com.example.calculator.di.DaggerCalculatorComponent
-import com.example.calculator.di.provider.LoginComponentProvider
+import com.example.login.di.LoginComponent
+import com.example.login.di.DaggerLoginComponent
+import com.example.login.di.provider.LoginComponentProvider
 import com.example.core.di.CoreModule
 import com.example.multimodule.di.ApplicationComponent
 import com.example.multimodule.di.DaggerApplicationComponent
@@ -17,8 +17,8 @@ class CustomApplication : Application(),
         CoreModule(this)
     }
 
-    override fun getCalculatorComponent(): CalculatorComponent {
-        return DaggerCalculatorComponent.builder()
+    override fun getLoginComponent(): LoginComponent {
+        return DaggerLoginComponent.builder()
             .coreModule(coreModule)
             .build()
     }

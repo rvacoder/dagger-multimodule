@@ -1,4 +1,4 @@
-package com.example.calculator.ui
+package com.example.login.ui
 
 import android.app.Activity
 import android.os.Bundle
@@ -9,11 +9,11 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.calculator.R
-import com.example.calculator.di.provider.LoginComponentProvider
-import com.example.calculator.usecase.LoginUseCase
-import com.example.calculator.usecase.LoginUseCase.Result.Failure
-import com.example.calculator.usecase.LoginUseCase.Result.Success
+import com.example.login.R
+import com.example.login.di.provider.LoginComponentProvider
+import com.example.login.usecase.LoginUseCase
+import com.example.login.usecase.LoginUseCase.Result.Failure
+import com.example.login.usecase.LoginUseCase.Result.Success
 import javax.inject.Inject
 
 class LoginActivity : AppCompatActivity() {
@@ -28,10 +28,10 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.acitivity_calculator)
+        setContentView(R.layout.activity_login)
 
         (application as LoginComponentProvider)
-            .getCalculatorComponent()
+            .getLoginComponent()
             .inject(this)
 
         bindViews()

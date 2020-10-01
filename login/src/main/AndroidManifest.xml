@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.calculator">
+    package="com.example.login">
 
     <application>
         <activity
             android:theme="@style/Theme.Login"
             android:label="Login"
-            android:name=".ui.LoginActivity"
+            android:name="com.example.login.ui.LoginActivity"
             android:screenOrientation="portrait" />
     </application>
 

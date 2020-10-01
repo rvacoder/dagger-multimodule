@@ -11,8 +11,6 @@ class SubscriptionModule {
 
     @Provides
     @Singleton
-    fun appSubscription(
-        stringsProvider: StringsProvider
-    ): AppSubscription = AppSubscription(stringsProvider)
+    fun appSubscription(stringsProvider: StringsProvider): AppSubscription = AppSubscription(stringsProvider)
 
 }

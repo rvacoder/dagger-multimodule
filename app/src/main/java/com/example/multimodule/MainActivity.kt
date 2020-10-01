@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.calculator.ui.LoginActivity
+import com.example.login.ui.LoginActivity
 import com.example.core.modes.AppSubscription
 import com.example.multimodule.di.provider.ApplicationComponentProvider
 import javax.inject.Inject
@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         subscriptionTextView.text = appSubscription.getUserSubscription()
     }
 
-    private fun startCalculatorActivity() {
+    private fun startLoginActivity() {
         startActivity(
             Intent(this, LoginActivity::class.java)
         )
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun bindListeners() {
         findViewById<Button>(R.id.login_button).setOnClickListener {
-            startCalculatorActivity()
+            startLoginActivity()
         }
     }
 }

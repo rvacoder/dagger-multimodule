@@ -1,6 +1,6 @@
-package com.example.calculator.usecase
+package com.example.login.usecase
 
-import com.example.calculator.R
+import com.example.login.R
 import com.example.core.resource.StringsProvider
 
 class LoginUseCase(private val stringsProvider: StringsProvider) {
