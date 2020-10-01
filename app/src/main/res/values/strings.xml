@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">dagger-multimodule-app</string>
+    <string name="to_login">Login</string>
+</resources>

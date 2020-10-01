@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Multi module example</string>
+    <string name="password_input">Password</string>
+    <string name="user_name_input">User</string>
+    <string name="login">Log In</string>
+    <string name="result">Result</string>
+    <string name="login_success">%s logged in!!</string>
+    <string name="login_fail">Invalid credentials!!</string>
+</resources>
