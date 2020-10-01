@@ -37,6 +37,6 @@ dependencies {
 
     implementation project(':core')
 
-    api 'com.google.dagger:dagger:2.29'
-    kapt 'com.google.dagger:dagger-compiler:2.29'
+    api "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
 }

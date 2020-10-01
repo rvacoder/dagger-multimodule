@@ -11,6 +11,6 @@ class LoginModule {
 
     @Provides
     @Singleton
-    fun sumUseCase(stringsProvider: StringsProvider): LoginUseCase = LoginUseCase(stringsProvider)
+    fun loginUseCase(stringsProvider: StringsProvider): LoginUseCase = LoginUseCase(stringsProvider)
 
 }
