@@ -9,9 +9,7 @@ import com.example.multimodule.di.ApplicationComponent
 import com.example.multimodule.di.DaggerApplicationComponent
 import com.example.multimodule.di.provider.ApplicationComponentProvider
 
-class CustomApplication : Application(),
-    LoginComponentProvider,
-    ApplicationComponentProvider {
+class MultiModuleApplication : Application(), LoginComponentProvider, ApplicationComponentProvider {
 
     private val coreModule: CoreModule by lazy {
         CoreModule(this)

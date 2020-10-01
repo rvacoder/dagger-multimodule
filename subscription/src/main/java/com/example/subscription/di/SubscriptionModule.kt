@@ -1,5 +1,6 @@
-package com.example.core.di
+package com.example.subscription.di
 
+import com.example.core.di.CoreModule
 import com.example.core.modes.AppSubscription
 import com.example.core.resource.StringsProvider
 import dagger.Module

@@ -1,3 +1,5 @@
 rootProject.name='dagger-multimodule-app'
-include ':app', ':login'
+include ':app'
+include ':login'
+include ':subscription'
 include ':core'

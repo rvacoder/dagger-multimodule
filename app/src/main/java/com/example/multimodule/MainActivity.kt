@@ -4,9 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.login.ui.LoginActivity
 import com.example.core.modes.AppSubscription
+import com.example.core.resource.StringsProvider
 import com.example.multimodule.di.provider.ApplicationComponentProvider
 import javax.inject.Inject
 
@@ -14,6 +16,9 @@ class MainActivity : AppCompatActivity() {
 
     @Inject
     lateinit var appSubscription: AppSubscription
+
+    @Inject
+    lateinit var stringsProvider: StringsProvider
 
     private lateinit var subscriptionTextView: TextView
 
@@ -33,6 +38,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun showSubscription() {
         subscriptionTextView.text = appSubscription.getUserSubscription()
+        Toast.makeText(this, stringsProvider.getString(R.string.app_name), Toast.LENGTH_SHORT).show()
     }
 
     private fun startLoginActivity() {
